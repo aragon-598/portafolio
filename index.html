@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Alejandro Aragon</title>
 </head>
 <body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a class="logo-nav" href="#">Parallax</a></li>
+            <li class="item"><a class="btn-nav" href="#">Home</a></li>
+            <li class="item"><a class="btn-nav" href="#">About</a></li>
+            <li class="item"><a class="btn-nav" href="#">Services</a></li> 
+            <li class="item"><a class="btn-nav" href="#">Features</a></li>
+            <li class="item"><a class="btn-nav" href="#">Blog</a></li>
+            <li class="item"><a class="btn-nav" href="#">Contact</a> </li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
+        </ul> 
+    </nav>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'data')"><i class="fa-solid fa-database"></i> Datos personales</button>
+        <button class="tablinks" onclick="openCity(event, 'skills')"><i class="fa-solid fa-puzzle-piece"></i> Skills</button>
+        <button class="tablinks" onclick="openCity(event, 'experience')"><i class="fa-solid fa-chess-board"></i> Experiencia</button>
+    </div>
+    <div id="data" class="tabcontent">
+        <h3>Datos personales</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+      
+      <div id="skills" class="tabcontent" style="display: none;">
+        <h3>Skills</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="experience" class="tabcontent" style="display: none;">
+        <h3>Experiencia</h3>
+        <table class="table">
+            <tr>
+              <th>Empresa</th>
+              <th>Cargo</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+            </tr>
+            <tr>
+              <td>Berglunds snabbköp</td>
+              <td>Christina Berglund</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+            </tr>
+          </table>
+      </div>
+      <!--div id="college" class="tabcontent">
+        <h3>Formacion</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div-->
+      <script>
+        document.addEventListener("DOMContentLoaded",function(event){
+        //FUNCION
+        console.log(screen.width)
+        
+        });
+        </script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
