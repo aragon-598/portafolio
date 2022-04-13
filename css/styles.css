@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+}
+
 body{
     background-color: #283747;
     margin: 0;
@@ -5,7 +9,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-family: 'Ubuntu', sans-serif;
     color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /*NAVBAR*/
@@ -14,7 +18,7 @@ body{
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10000;
   display: flex;
   justify-content: space-between;
 }
@@ -45,6 +49,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1000;
   }
   .sample-header::before {
     content: "";
@@ -58,7 +63,8 @@ body{
     background-size: cover;
     background-image: url("../img/laptop-3214756.svg");
     background-repeat: no-repeat;
-    opacity: 0.5;
+    /* opacity: 0.1; */
+    /*background-blend-mode: screen, overlay;*/
     min-height: 125.77px;
   }
   /*MIS DATOS*/
@@ -70,9 +76,9 @@ body{
     display: flex;
     justify-content: left;
     max-width: auto;
-    color: white;
+    color: #EAFAF1;
     align-items: center;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     z-index: 4;
   }
 
